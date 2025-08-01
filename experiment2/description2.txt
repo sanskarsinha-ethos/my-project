@@ -1,0 +1,17 @@
+-Main Interface:
+1.Features a central account hub as the primary focus.
+2.Prominently displays the user's available balance within a stylish, light-blue card.
+
+-Action Buttons:
+1.Provides two intuitive action buttons: "Add Money"  and "Get Money" .
+
+2.Buttons are color-coded for quick recognition: green for deposits and red for withdrawals.
+
+-Design: 
+1.Boasts a polished, clean, and modern design.
+
+2.Uses soft colors, rounded corners, and subtle shadows.
+
+3.Achieves a professional yet approachable feel
+
+-This user-friendly banking interface showcases your balance with intuitive action buttons, all within a clean, modern, and responsive design.
