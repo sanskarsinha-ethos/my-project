@@ -1,0 +1,91 @@
+Experiment 6
+Create a simple drawing application where the user can draw on a canvas with the mouse and clear it with a button. This experiment helps practice working with the HTML5 <canvas> element, mouse events, and dynamic rendering using JavaScript.
+
+Overview
+In this experiment, I created a web-based drawing tool that allows users to draw freehand lines on a canvas using their mouse. The canvas responds to mouse clicks and movement, creating strokes in real time. A "Clear" button lets the user reset the canvas.
+
+HTML Structure
+<!DOCTYPE html>: Declares that this is an HTML5 document.
+
+<html>: Root element of the page.
+
+<head>: Contains metadata, styles, and the page title.
+
+<title>: Sets the browser tab text as "Simple Drawing".
+
+<style>: Adds CSS styles.
+
+The <canvas> has a black border and a crosshair cursor.
+
+The <body> content is centered with padding.
+
+Inside the <body>:
+
+A <h2> heading "Draw with Mouse".
+
+A <canvas> element (id="canvas") with width=500 and height=300.
+
+A <button> element that calls clearCanvas() when clicked.
+
+JavaScript Logic
+The JavaScript code controls the drawing process and canvas clearing.
+
+Setup
+
+js
+Copy
+Edit
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let drawing = false;
+Grabs the canvas and its 2D drawing context.
+
+A boolean drawing tracks whether the mouse is pressed.
+
+Mouse Events
+
+canvas.onmousedown: Starts drawing, begins a new path, and moves to the cursor position.
+
+canvas.onmousemove: If drawing is active, draws a line to the current mouse position and renders it with ctx.stroke().
+
+canvas.onmouseup and canvas.onmouseout: Stop drawing when the mouse is released or leaves the canvas.
+
+Clear Function
+
+js
+Copy
+Edit
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+Clears the entire canvas area.
+
+Styling the Pen
+
+js
+Copy
+Edit
+ctx.lineWidth = 2;
+ctx.strokeStyle = 'black';
+ctx.lineCap = 'round';
+Sets the line thickness, color, and rounded edges for smooth strokes.
+
+Breakdown of the Logic
+The canvas is prepared and given drawing properties.
+
+Mouse events are tracked to detect when the user starts and stops drawing.
+
+Paths are created dynamically as the user moves the mouse.
+
+The "Clear" button resets the drawing area.
+
+Key Learning Points
+Practiced using the <canvas> element for interactive graphics.
+
+Learned to capture mouse events (mousedown, mousemove, mouseup, mouseout) for drawing actions.
+
+Gained experience with the CanvasRenderingContext2D API (beginPath, moveTo, lineTo, stroke).
+
+Understood how to clear the canvas using clearRect().
+
+Styled drawing strokes with line width, color, and cap for a smoother look.
