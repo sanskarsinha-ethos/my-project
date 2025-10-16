@@ -1,0 +1,10 @@
+My learnings:
+This HTML taught how to structure
+a basic web form using the <form> tag.
+Than i implemented different input fields
+like text, email, and number, and associate
+them with <label> elements for better 
+accessibility. It also demonstrates
+implementing built-in browser validation 
+using attributes like required, minlength,
+and max.
